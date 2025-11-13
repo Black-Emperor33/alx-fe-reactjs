@@ -20,11 +20,11 @@ setDescription(recipe.description)
 
 if (!recipe) return <p>Recipe not found.</p>
 
-const handleSubmit = (e) => {
-e.preventDefault()
-updateRecipe({ id: recipe.id, title: title.trim(), description: description.trim() })
-navigate(`/recipe/${recipe.id}`)
-}
+const handleSubmit = (event) => {
+    event.preventDefault();
+    updateRecipe({ id: recipe.id, title: title.trim(), description: description.trim() });
+    navigate(`/recipe/${recipe.id}`);
+  };
 
 return (
 <form onSubmit={handleSubmit}>
