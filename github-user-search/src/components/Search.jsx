@@ -41,7 +41,13 @@ const Search = () => {
       <div style={{ marginTop: "20px" }}>
         {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}
-        {user && <UserCard user={user} />}
+        {user && (
+          <div>
+            <img src={user.avatar_url} alt={user.login} /> 
+            <p>{user.login}</p>                            
+            <p>{user.avatar_url}</p>                       
+          </div>
+        )}
       </div>
     </div>
   );
