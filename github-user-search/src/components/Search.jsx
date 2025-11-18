@@ -20,7 +20,7 @@ const Search = () => {
       const response = await fetchUserData(username);
       setUser(response.data);   // GitHub API returns the user object
     } catch (err) {
-      setError("Looks like we can't find the user");
+      setError("Looks like we cant find the user");
     } finally {
       setLoading(false);
     }
