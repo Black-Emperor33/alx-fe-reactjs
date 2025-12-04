@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import recipesData from "../data.json";
 
 function HomePage() {
@@ -16,28 +17,24 @@ function HomePage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {recipes.map((recipe) => (
-          <div
-            key={recipe.id}
-            className="bg-yellow-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <img
-              src={recipe.image}
-              alt={recipe.title}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-xl font-semibold mb-2 text-gray-900">
-                {recipe.title}
-              </h2>
-              <p className="text-gray-700">{recipe.summary}</p>
-              <a
-                href="#"
-                className="text-blue-500 hover:underline mt-2 inline-block"
-              >
-                View Recipe
-              </a>
+          <Link key={recipe.id} to={`/recipe/${recipe.id}`}>
+            <div className="bg-yellow-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+              <img
+                src={recipe.image}
+                alt={recipe.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h2 className="text-xl font-semibold mb-2 text-gray-900">
+                  {recipe.title}
+                </h2>
+                <p className="text-gray-700">{recipe.summary}</p>
+                <span className="text-blue-500 hover:underline mt-2 inline-block">
+                  View Recipe
+                </span>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
