@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Avocado Toast",
+    "summary": "Simple, quick, and healthy avocado on crispy toast with a sprinkle of chili flakes.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "title": "Beef Stroganoff",
+    "summary": "Tender strips of beef in a creamy mushroom sauce, served with noodles or rice.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "title": "Greek Salad",
+    "summary": "A fresh and healthy salad with tomatoes, cucumbers, olives, feta cheese, and olive oil.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "title": "Pancakes",
+    "summary": "Fluffy pancakes served with maple syrup, berries, and a dollop of butter.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "title": "Shrimp Scampi",
+    "summary": "Juicy shrimp cooked in garlic butter and white wine sauce, served with pasta.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "title": "Vegan Buddha Bowl",
+    "summary": "A colorful bowl with quinoa, roasted veggies, chickpeas, and tahini dressing.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "title": "Chocolate Brownies",
+    "summary": "Rich and fudgy chocolate brownies with a crispy top and gooey center.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "title": "Caprese Sandwich",
+    "summary": "Fresh mozzarella, tomatoes, and basil on a toasted baguette with balsamic glaze.",
+    "image": "https://via.placeholder.com/150"
+  }
+]
