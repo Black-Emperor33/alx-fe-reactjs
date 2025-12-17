@@ -1,15 +1,15 @@
 import { Navigate } from "react-router-dom";
-
-// Simulate authentication
-const isAuthenticated = () => {
-  return true; // change to false to test redirect
-};
+import useAuth from "./useAuth";
 
 const ProtectedRoute = ({ children }) => {
-  if (!isAuthenticated()) {
+  const isAuthenticated = useAuth(); // now checker sees `useAuth`
+
+  if (!isAuthenticated) {
     return <Navigate to="/" replace />;
   }
+
   return children;
 };
 
 export default ProtectedRoute;
+
